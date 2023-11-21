@@ -1,3 +1,5 @@
+/*#ffffff   |   #000000    |    #14213D    |   #FCA311   |   #E5E5E5*/
+
 body {
     font-family: 'Lora', serif;
     margin: 0;
@@ -5,7 +7,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #000000;
     color: white;
     padding: 1em;
 }
@@ -62,7 +64,7 @@ section {
 
 /* Adicione as regras para intercalar as cores de fundo das sections */
 section:nth-child(even) {
-    background-color: #f4f4f4; /* Cor de fundo para sections pares */
+    background-color: #E5E5E5; /* Cor de fundo para sections pares */
 }
 
 section:nth-child(odd) {
@@ -134,7 +136,7 @@ footer {
 
 #contato button {
     margin-top: 1em;
-    background-color: orange;
+    background-color: #FCA311;
     color: black;
     padding: 0.5em 1em;
     border: 1px solid #000;
@@ -144,9 +146,9 @@ footer {
 }
 
 #contato button:hover {
-    background-color: #FFD700;
+    background-color: FCA311;
     color: black;
-    border-color: #FFD700;
+    border-color: FCA311;
     transform: scale(1.05);
 }
 
@@ -185,7 +187,7 @@ footer {
 }
 
 .ver-mais-btn {
-    background-color: orange;
+    background-color: #FCA311;
     color: black;
     padding: 0.3em 0.5em;
     border: none;
