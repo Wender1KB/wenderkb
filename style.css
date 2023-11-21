@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #000000;
+    background-color: #021024;
     color: white;
     padding: 1em;
 }
@@ -21,6 +21,14 @@ nav {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+    transition: font-size 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave para font-size e color */
+}
+
+.logo:hover {
+    font-size: 2.2em; /* Tamanho da fonte ao passar o mouse */
+    color: #8f1818; /* Cor desejada ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    /* Adicione outros estilos desejados ao passar o mouse */
 }
 
 .menu-toggle {
@@ -32,7 +40,7 @@ nav {
 .menu-toggle span {
     height: 3px;
     width: 25px;
-    background-color: white;
+    background-color: #7DA0CA;
     margin: 5px 0;
     border-radius: 5px;
 }
@@ -55,7 +63,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #CCCCCC;
+    color: #C1E8FF;
 }
 
 section {
@@ -64,11 +72,11 @@ section {
 
 /* Adicione as regras para intercalar as cores de fundo das sections */
 section:nth-child(even) {
-    background-color: #E5E5E5; /* Cor de fundo para sections pares */
+    background-color: #C1E8FF; /* Cor de fundo para sections pares */
 }
 
 section:nth-child(odd) {
-    background-color: #fff; /* Cor de fundo para sections ímpares */
+    background-color: #7DA0CA; /* Cor de fundo para sections ímpares */
 }
 
 .separador {
@@ -76,7 +84,7 @@ section:nth-child(odd) {
 }
 
 footer {
-    background-color: #CCCCCC;
+    background-color: #021024;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -136,7 +144,7 @@ footer {
 
 #contato button {
     margin-top: 1em;
-    background-color: #FCA311;
+    background-color: #7DA0CA;
     color: black;
     padding: 0.5em 1em;
     border: 1px solid #000;
@@ -187,7 +195,7 @@ footer {
 }
 
 .ver-mais-btn {
-    background-color: #FCA311;
+    background-color: #7DA0CA;
     color: black;
     padding: 0.3em 0.5em;
     border: none;
