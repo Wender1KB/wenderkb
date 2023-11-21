@@ -1,0 +1,231 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #CCCCCC;
+}
+
+section {
+    padding: 2em;
+}
+
+/* Adicione as regras para intercalar as cores de fundo das sections */
+section:nth-child(even) {
+    background-color: #f4f4f4; /* Cor de fundo para sections pares */
+}
+
+section:nth-child(odd) {
+    background-color: #fff; /* Cor de fundo para sections ímpares */
+}
+
+.separador {
+    position: relative;
+}
+
+footer {
+    background-color: #CCCCCC;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.social-icons {
+    margin-top: 10px; /* Adiciona uma margem acima dos ícones sociais */
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #CCCCCC;
+}
+
+#sobre {
+    padding: 2em;
+}
+
+#educacao {
+    padding: 2em;
+}
+
+#educacao h2 {
+    color: black;
+}
+
+#educacao a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+#educacao a:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+    transform: scale(1.05);
+}
+
+#contato {
+    padding: 2em;
+    text-align: center;
+}
+
+#contato button {
+    margin-top: 1em;
+    background-color: orange;
+    color: black;
+    padding: 0.5em 1em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+#contato button:hover {
+    background-color: #FFD700;
+    color: black;
+    border-color: #FFD700;
+    transform: scale(1.05);
+}
+
+#habilidades {
+    padding: 2em;
+}
+
+#habilidades h2 {
+    margin-bottom: 1em;
+}
+
+#habilidades ul {
+    margin-top: 20px; /* Adiciona uma margem acima da lista de habilidades */
+}
+
+#lista-habilidades li {
+    margin-bottom: 15px; /* Adiciona um espaçamento entre as habilidades */
+}
+
+#lista-habilidades {
+    padding: 2em;
+}
+
+#lista-habilidades ul {
+    margin-top: 20px;
+}
+
+.habilidade-nome {
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+.ver-mais-btn {
+    background-color: orange;
+    color: black;
+    padding: 0.3em 0.5em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    vertical-align: middle; /* Alinha verticalmente o botão em relação ao texto */
+}
+
+
+.ver-mais-btn:hover {
+    background-color: #CCCCCC;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: black;
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    #educacao a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
