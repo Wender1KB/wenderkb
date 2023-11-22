@@ -66,6 +66,16 @@ nav {
     color: #C1E8FF;
 }
 
+.container {
+    display: flex;
+}
+
+.half {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 section {
     padding: 2em;
 }
@@ -117,6 +127,11 @@ footer {
 
 #sobre p {
     color: #021024;
+}
+
+#sobre img {
+
+    margin-top: -50px;
 }
 
 #educacao {
@@ -250,8 +265,21 @@ footer {
         display: flex;
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .half {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        order: 1;
+    }
+
     #educacao a {
         display: block;
         margin-bottom: 10px;
     }
+    
 }
