@@ -26,7 +26,7 @@ nav {
 
 .logo:hover {
     font-size: 2.2em; /* Tamanho da fonte ao passar o mouse */
-    color: #8f1818; /* Cor desejada ao passar o mouse */
+    color: #052659; /* Cor desejada ao passar o mouse */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
     /* Adicione outros estilos desejados ao passar o mouse */
 }
@@ -111,19 +111,27 @@ footer {
     padding: 2em;
 }
 
+#sobre h2 {
+    color: #021024;
+}
+
+#sobre p {
+    color: #021024;
+}
+
 #educacao {
     padding: 2em;
 }
 
 #educacao h2 {
-    color: black;
+    color: #021024;
 }
 
 #educacao a {
-    color: #000;
+    color: #021024;
     text-decoration: none;
     padding: 0.5em 1em;
-    border: 1px solid #000;
+    border: 1px solid #C1E8FF;
     border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
@@ -131,37 +139,18 @@ footer {
 }
 
 #educacao a:hover {
-    background-color: #000;
-    color: #fff;
-    border-color: #fff;
-    transform: scale(1.05);
-}
-
-#contato {
-    padding: 2em;
-    text-align: center;
-}
-
-#contato button {
-    margin-top: 1em;
-    background-color: #7DA0CA;
-    color: black;
-    padding: 0.5em 1em;
-    border: 1px solid #000;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-}
-
-#contato button:hover {
-    background-color: FCA311;
-    color: black;
-    border-color: FCA311;
+    background-color: #021024;
+    color: #C1E8FF;
+    border-color: #C1E8FF;
     transform: scale(1.05);
 }
 
 #habilidades {
     padding: 2em;
+}
+
+#habilidades h1 {
+    color: #021024;
 }
 
 #habilidades h2 {
@@ -173,6 +162,7 @@ footer {
 }
 
 #lista-habilidades li {
+    color: #021024;
     margin-bottom: 15px; /* Adiciona um espaçamento entre as habilidades */
 }
 
@@ -195,8 +185,8 @@ footer {
 }
 
 .ver-mais-btn {
-    background-color: #7DA0CA;
-    color: black;
+    background-color: #021024;
+    color: #5483B3;
     padding: 0.3em 0.5em;
     border: none;
     cursor: pointer;
@@ -206,7 +196,33 @@ footer {
 
 
 .ver-mais-btn:hover {
-    background-color: #CCCCCC;
+    background-color: #7DA0CA;
+}
+
+#contato {
+    padding: 2em;
+    text-align: center;
+}
+#contato h1 {
+    color: #021024;
+}
+
+#contato button {
+    margin-top: 1em;
+    background-color: #7DA0CA;
+    color: #021024;
+    padding: 0.5em 1em;
+    border: 1px solid #021024;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+#contato button:hover {
+    background-color: #021024;
+    color: #7DA0CA;
+    border-color: #7DA0CA;
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {
