@@ -142,22 +142,46 @@ footer {
     color: #021024;
 }
 
-#educacao a {
+#educacao p{
+    color: #021024;
+}
+
+.curso {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #C1E8FF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.curso img {
+    margin-right: 10px;
+    width: 30px; /* Ajuste conforme necessário */
+}
+
+.curso p {
+    margin: 0;
+}
+
+.curso a {
     color: #021024;
     text-decoration: none;
     padding: 0.5em 1em;
-    border: 1px solid #C1E8FF;
+    border: 1px solid #5483B3;
     border-radius: 5px;
-    display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
 }
 
-#educacao a:hover {
-    background-color: #021024;
-    color: #C1E8FF;
+.curso:hover {
+    background-color: #5483B3;
+}
+
+.curso:hover a {
+    color: #021024;
     border-color: #C1E8FF;
-    transform: scale(1.05);
 }
 
 /*teste*/
@@ -200,7 +224,7 @@ ul {
 
 li {
     padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #021024;
 }
 /*fim teste*/
 
@@ -326,6 +350,11 @@ li {
     #educacao a {
         display: block;
         margin-bottom: 10px;
+    }
+
+    .curso {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .divisao {
