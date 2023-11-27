@@ -160,6 +160,50 @@ footer {
     transform: scale(1.05);
 }
 
+/*teste*/
+.skills-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    color: #021024;
+}
+
+.skills-container {
+    display: flex;
+    color: #021024;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    flex: 1;
+    min-width: 300px;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #021024;
+    border-radius: 8px;
+    background-color: #7DA0CA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+/*fim teste*/
+
 #habilidades {
     padding: 2em;
 }
@@ -213,6 +257,8 @@ footer {
 .ver-mais-btn:hover {
     background-color: #7DA0CA;
 }
+
+
 
 #contato {
     padding: 2em;
@@ -269,7 +315,7 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    
+
     .half {
         flex: 1;
         padding: 20px;
@@ -281,5 +327,10 @@ footer {
         display: block;
         margin-bottom: 10px;
     }
+
+    .divisao {
+        flex: 100%; /* Altera para largura total em telas menores */
+    }
+
     
 }
