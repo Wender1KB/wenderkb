@@ -215,6 +215,8 @@ h1 {
 
 .skill-card:hover {
     transform: scale(1.05);
+    background-color: #021024;
+    color: #C1E8FF;
 }
 
 ul {
@@ -224,7 +226,7 @@ ul {
 
 li {
     padding: 8px 0;
-    border-bottom: 1px solid #021024;
+    border-bottom: 1px solid #5483B3;
 }
 /*fim teste*/
 
